@@ -1,10 +1,10 @@
 import React from 'react'
 
 const images = [
-  '/carousel1',
-  '/carousel2',
-  '/carousel3',
-  '/carousel4',
+  '/Images/carousel1',
+  '/Images/carousel2',
+  '/Images/carousel3',
+  '/Images/carousel4',
 ]
 
 export default function HeroCarousel() {
