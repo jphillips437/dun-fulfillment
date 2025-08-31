@@ -1,10 +1,11 @@
-import React from 'react'
+
+import Image from 'next/image'
 
 const images = [
-  '/Images/carousel1',
-  '/Images/carousel2',
-  '/Images/carousel3',
-  '/Images/carousel4',
+  '/Images/carousel1.jpg',
+  '/Images/carousel2.jpg',
+  '/Images/carousel3.jpg',
+  '/Images/carousel4.jpg',
 ]
 
 export default function HeroCarousel() {
@@ -13,10 +14,13 @@ export default function HeroCarousel() {
       <div className="flex transition-transform duration-700">
         {images.map((src, index) => (
           <div key={index} className="flex-shrink-0 w-full">
-            <img
+            <Image
               src={src}
               alt={`Slide ${index + 1}`}
+              width={1200}
+              height={384}
               className="w-full h-96 object-cover rounded-xl"
+              priority={index === 0}
             />
           </div>
         ))}
