@@ -1,9 +1,10 @@
 import React from 'react'
 
 const images = [
-  '/images/watch-band.jpg',
-  '/images/jewelry.jpg',
-  '/images/premium-packaging.jpg',
+  '/carousel1',
+  '/carousel2',
+  '/carousel3',
+  '/carousel4',
 ]
 
 export default function HeroCarousel() {
