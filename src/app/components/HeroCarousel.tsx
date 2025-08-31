@@ -2,10 +2,10 @@
 import Image from 'next/image'
 
 const images = [
-  '/Images/carousel1.jpg',
-  '/Images/carousel2.jpg',
-  '/Images/carousel3.jpg',
-  '/Images/carousel4.jpg',
+  '/images/carousel1.jpg',
+  '/images/carousel2.jpg',
+  '/images/carousel3.jpg',
+  '/images/carousel4.jpg',
 ]
 
 export default function HeroCarousel() {
