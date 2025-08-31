@@ -34,13 +34,13 @@ export default function HeroCarousel() {
   }, [current]);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-xl shadow-lg h-96">
+  <div className="relative overflow-hidden rounded-xl shadow-lg" style={{ width: '75%', height: '576px', margin: '0 auto' }}>
       <div
         className="flex transition-transform duration-700"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((src, index) => (
-          <div key={index} className="flex-shrink-0 w-full h-96 relative">
+          <div key={index} className="flex-shrink-0 w-full relative" style={{ height: '576px' }}>
             <Image
               src={src}
               alt={`Slide ${index + 1}`}
