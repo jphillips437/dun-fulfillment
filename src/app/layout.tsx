@@ -5,6 +5,7 @@ export const metadata = {
   description: 'Orders. Done. Boutique fulfillment for small brands.',
 }
 
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-cream text-gray-900">
